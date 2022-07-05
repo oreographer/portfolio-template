@@ -1,0 +1,147 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Futura_Bk", sans-serif;
+  --theme-color: #6c0ce9;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--theme-color);
+  color: white;
+}
+
+@font-face {
+  font-family: "Futura_Bd";
+  src: url(/assets/font/Futura-Bold.woff);
+}
+@font-face {
+  font-family: "Futura_Md";
+  src: url(/assets/font/Futura-Med.woff);
+}
+@font-face {
+  font-family: "Futura_Bk";
+  src: url(/assets/font/Futura-Book.woff);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Disable ScrollBar */
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Preloader Hide */
+.preloader_hide {
+  height: 0;
+}
+
+/* 4 line |||| */
+.line_active {
+  height: 100%;
+}
+
+/* SCROLLDOWN TEXT */
+.scrolldown {
+  writing-mode: vertical-rl;
+  --webkit-writing-mode: vertical-rl;
+  transform: translate(0, 200px);
+}
+.scrolldown::after {
+  content: "";
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto 5.5px auto auto;
+  bottom: -50px;
+}
+.scrolldown_active {
+  transform: translate(0, 0);
+}
+
+/*Section Text Slider */
+.text_slider {
+  transform: translateX(5px);
+}
+
+/* Hamburger Line Active Class */
+.hamb_line1_active {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+.hamb_line2_active {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/* Navbar Active */
+.nav_active {
+  transform: translate(0, 0);
+}
+.nav_bounce {
+  transform: translate(0, 0);
+}
+
+h1 {
+  font-family: "Futura_Bd";
+}
+
+h2 {
+  font-family: "Futura_Md";
+}
+
+/* TEXT Stroke */
+.stroke_white {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* 2nd Pages */
+.work2cont_slide {
+  transform: translateX(0);
+}
+.about2cont_slide {
+  transform: translateX(0);
+}
+
+/* All Works Items Fade In Class */
+.fade {
+  transition: all 0.5s;
+  transform: translateY(1rem);
+}
+
+.fade_in {
+  transform: translateY(0);
+}
+
+/* Passion For Items Fade In Class */
+.card {
+  transition: all 0.5s;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.card_fade {
+  transform: translate(0);
+  opacity: 1;
+}
