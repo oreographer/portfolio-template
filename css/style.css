@@ -128,7 +128,7 @@ h2 {
 /* All Works Items Fade In Class */
 .fade {
   transition: all 0.5s;
-  transform: translateY(1rem);
+  transform: translateY(2rem);
 }
 
 .fade_in {
@@ -137,7 +137,7 @@ h2 {
 
 /* Passion For Items Fade In Class */
 .card {
-  transition: all 0.5s;
+  transition: all 0.7s;
   transform: translateY(2rem);
   opacity: 0;
 }

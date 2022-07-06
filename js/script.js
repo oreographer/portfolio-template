@@ -122,7 +122,7 @@ const cardItems = document.querySelectorAll(".card");
 about2cont.addEventListener("scroll", function () {
   for (let i = 0; i < cardItems.length; i++) {
     let elem = cardItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 30;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 40;
     if (distInView < 0) {
       elem.classList.add("card_fade");
     } else {
@@ -137,7 +137,7 @@ const progressItems = document.querySelectorAll(".progressbar");
 about2cont.addEventListener("scroll", function () {
   for (let i = 0; i < progressItems.length; i++) {
     let elem = progressItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 40;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
     if (distInView < 0) {
       const value = elem.dataset.progress;
       elem.style.width = `${value}%`;
@@ -146,6 +146,7 @@ about2cont.addEventListener("scroll", function () {
     }
   }
 });
+
 
 // Scroll Up / Down Items skew!
 // const scroll = document.getElementById("about2cont");
