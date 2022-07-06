@@ -6,7 +6,8 @@ body {
   font-family: "Futura_Bk", sans-serif;
   --theme-color: #6c0ce9;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 600px) {
