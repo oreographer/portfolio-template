@@ -87,6 +87,16 @@ main::-webkit-scrollbar {
   transform: translateX(5px);
 }
 
+/* Image Slider */
+.imageslider {
+  transform: scale(0.8);
+  transition: transform 0.5s ease-out;
+}
+
+.image_slider {
+  transform: scale(1);
+}
+
 /* Hamburger Line Active Class */
 .hamb_line1_active {
   transform: rotate(45deg) translate(6px, 5px);
@@ -104,17 +114,12 @@ main::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: "Futura_Bd";
-}
-
-h2 {
   font-family: "Futura_Md";
 }
 
-/* TEXT Stroke */
-.stroke_white {
-  -webkit-text-stroke: 2px white;
-  color: transparent;
+/* 01 Numbers */
+.counting {
+  font-family: "Abril Fatface", cursive;
 }
 
 /* 2nd Pages */
@@ -145,4 +150,8 @@ h2 {
 .card_fade {
   transform: translate(0);
   opacity: 1;
+}
+
+.moon_slide {
+  transform: translateX(200%);
 }

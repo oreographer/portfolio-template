@@ -27,21 +27,24 @@ window.addEventListener("resize", () => {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-// 4-Lines active/deactive Function
+// 4-Lines & slide active/deactive Function
 const sections = document.querySelectorAll("section");
 const navBtns = document.querySelectorAll(".navbutton");
 const scrollDown = document.querySelector(".scrolldown");
 const textSlider = document.querySelectorAll(".textslider");
+const imageSlider = document.querySelectorAll(".imageslider");
 
 const activeSectionHandler = (currentSectionId) => {
   navBtns.forEach((btn) => {
     if (btn.dataset.section === currentSectionId) {
       btn.classList.add("line_active");
       scrollDown.classList.remove("scrolldown_active");
+      document.querySelector('.moon').classList.add('moon_slide')
       return;
     }
     btn.classList.remove("line_active");
     scrollDown.classList.add("scrolldown_active");
+    document.querySelector('.moon').classList.toggle('moon_slide')
   });
 
   textSlider.forEach((slider) => {
@@ -50,6 +53,14 @@ const activeSectionHandler = (currentSectionId) => {
       return;
     }
     slider.classList.remove("text_slider");
+  });
+
+  imageSlider.forEach((imageslider) => {
+    if (imageslider.dataset.section === currentSectionId) {
+      imageslider.classList.add("image_slider");
+      return;
+    }
+    imageslider.classList.remove("image_slider");
   });
 };
 
@@ -93,7 +104,7 @@ const workItems = document.querySelectorAll(".fade");
 work2cont.addEventListener("scroll", function () {
   for (let i = 0; i < workItems.length; i++) {
     let elem = workItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 15;
     if (distInView < 0) {
       elem.classList.add("fade_in");
     } else {
@@ -102,19 +113,6 @@ work2cont.addEventListener("scroll", function () {
   }
 });
 
-// Passion For - Animation
-const passion = document.querySelector(".passion");
-
-about2cont.addEventListener("scroll", () => {
-  const sectionPos = passion.getBoundingClientRect().top;
-  const screenPos = window.innerHeight / 1.2;
-
-  if (sectionPos < screenPos) {
-    passion.style.translate = "0";
-  } else {
-    passion.style.translate = "0";
-  }
-});
 
 // Passion For Items Fade Animation function
 const cardItems = document.querySelectorAll(".card");
@@ -122,7 +120,7 @@ const cardItems = document.querySelectorAll(".card");
 about2cont.addEventListener("scroll", function () {
   for (let i = 0; i < cardItems.length; i++) {
     let elem = cardItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 40;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 30;
     if (distInView < 0) {
       elem.classList.add("card_fade");
     } else {
@@ -137,7 +135,7 @@ const progressItems = document.querySelectorAll(".progressbar");
 about2cont.addEventListener("scroll", function () {
   for (let i = 0; i < progressItems.length; i++) {
     let elem = progressItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 10;
     if (distInView < 0) {
       const value = elem.dataset.progress;
       elem.style.width = `${value}%`;
