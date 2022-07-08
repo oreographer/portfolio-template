@@ -141,13 +141,13 @@ h1 {
 }
 
 /* Passion For Items Fade In Class */
-.card {
+.passion {
   transition: all 0.7s;
   transform: translateY(2rem);
   opacity: 0;
 }
 
-.card_fade {
+.passion_fade {
   transform: translate(0);
   opacity: 1;
 }

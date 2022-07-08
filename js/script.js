@@ -115,16 +115,16 @@ work2cont.addEventListener("scroll", function () {
 
 
 // Passion For Items Fade Animation function
-const cardItems = document.querySelectorAll(".card");
+const cardItems = document.querySelectorAll(".passion");
 
 about2cont.addEventListener("scroll", function () {
   for (let i = 0; i < cardItems.length; i++) {
     let elem = cardItems[i];
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 30;
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 150;
     if (distInView < 0) {
-      elem.classList.add("card_fade");
+      elem.classList.add("passion_fade");
     } else {
-      elem.classList.remove("card_fade");
+      elem.classList.remove("passion_fade");
     }
   }
 });
