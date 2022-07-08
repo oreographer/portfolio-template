@@ -22,7 +22,7 @@
     <meta property="og:locale" content="en_IN" />
     <meta name="twitter:site" content="@oreographer" />
     <meta name="twitter:creator" content="@oreographer" />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R32QZZZD3R"></script>
@@ -183,7 +183,7 @@
 
         <!-- Background MOON Design -->
         <div
-            class=" fixed bottom-[10vh] md:-bottom-40 left-[30%] md:left-[40vw] h-[calc(20rem+50vw)] bg-slate-700/40 w-[calc(20rem+50vw)] overflow-hidden rounded-full grid place-items-center">
+            class="fixed bottom-[10vh] md:-bottom-40 left-[30%] md:left-[40vw] h-[calc(20rem+50vw)] bg-slate-700/40 w-[calc(20rem+50vw)] overflow-hidden rounded-full grid place-items-center">
             <div class="h-[87%] w-[87%] bg-slate-500/30 rounded-full grid place-items-center">
                 <div class="h-[87%] w-[87%] bg-slate-400/30 rounded-full grid place-items-center">
                     <div class="h-[85%] w-[85%] bg-slate-300/30 rounded-full grid place-items-center">
@@ -198,13 +198,13 @@
         </div>
 
         <!-- Home ------- Top Section -->
-        <section id="home" class="overflow-hidden snap-center w-full h-full flex items-center relative ">
+        <section id="home" class="overflow-hidden snap-center w-full h-full flex items-center relative">
             <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute" data-section="home">
                 <!-- Text Slider -->
-                <div class="textslider space-y-7 transition-transform duration-700 translate-x-[-100%]"
+                <div class="textslider space-y-6 transition-transform duration-700 translate-x-[-100%] ease-out"
                     data-section="home">
                     <!-- Himanshu Heading -->
-                    <h1 class="text-[calc(1.2rem+6vw)] text-white leading-[1.3em] tracking-widest">
+                    <h1 class="text-[calc(1.5rem+6vw)] text-white leading-[1.3em] tracking-widest">
                         HIMANSHU
                         <br />
                         SHARMA
@@ -227,17 +227,17 @@
 
         <!-- Works Section -->
         <section id="works" class="overflow-hidden snap-center w-full h-full flex md:items-center relative">
-            <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute z-10 bottom-[18vh] md:bottom-[20vh]">
+            <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute z-10 bottom-[15%] md:bottom-[20%]">
                 <!-- Text Slider -->
-                <div class="textslider space-y-6 transition-transform duration-700 translate-x-[-100%]"
+                <div class="textslider w-full space-y-5 md:sp-y-6 transition-transform duration-700 translate-x-[-100%] ease-out"
                     data-section="works">
                     <!-- My Works Heading -->
-                    <h1 class="text-[calc(1.2rem+6vw)] text-white tracking-widest">
+                    <h1 class="text-[calc(1.5rem+6vw)] text-white tracking-widest">
                         My Works
                     </h1>
 
                     <!-- Fancy Lines -->
-                    <div class="space-y-4 w-32">
+                    <div class="space-y-4 w-32 hidden md:block">
                         <div class="w-20 rounded-md ml-auto h-1 bg-gradient-to-r from-rose-500 to-indigo-700"></div>
                         <div class="w-20 rounded-md h-1 bg-gradient-to-r from-rose-500 to-indigo-700"></div>
                     </div>
@@ -250,7 +250,7 @@
 
                     <!-- Show Here Button -->
                     <button onclick="work2()"
-                        class="h-9 w-28 text-sm hover:-translate-y-0.5 transition-transform duration-300 bg-gradient-to-r from-rose-500 to-indigo-700 text-white rounded-full">
+                        class="h-9 w-28 text-sm hover:-translate-y-0.5 mx-auto transition-transform duration-300 bg-gradient-to-r from-rose-500 to-indigo-700 text-white rounded-full">
                         Show here
                     </button>
                 </div>
@@ -259,7 +259,7 @@
             <!-- Work 2 Countainer -->
             <div id="work2cont"
                 class="h-screen z-50 w-screen bg-neutral-100 translate-x-full transition-transform duration-300 ease-out overflow-y-scroll fixed right-0 top-0">
-                <div class="px-[7vw] md:px-[5vw]">
+                <div class="px-[8vw] md:px-[5vw]">
                     <!-- Back Arrow -->
                     <div class="w-full sticky top-0 py-7 flex z-10">
                         <!-- work 2 back-button -->
@@ -275,11 +275,13 @@
 
                     <!-- Works -->
                     <div class="pt-10">
-                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">ALL WORKS</h1>
+                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">
+                            ALL WORKS
+                        </h1>
                     </div>
 
                     <!-- Works Items Countainer -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-14">
                         <!-- Work items start from here >>> -->
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
                             style="background-image: url('/assets/img/desktor.png')">
@@ -459,13 +461,11 @@
                 </div>
             </div>
 
-
-
             <div data-section="works"
-                class="absolute imageslider right-[10vw] h-[40vh] bottom-[45vh] md:bottom-[15vh] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center  aspect-[4/5] bg-slate-500"
+                class="absolute imageslider right-[10vw] h-[50%] bottom-[35%] md:bottom-[15%] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center aspect-[4/5] bg-slate-500"
                 style="background-image: url('/assets/img/my_photo.jpg')">
                 <span
-                    class="counting z-10 text-[calc(2rem+5vw)] text-white  absolute -bottom-12 hidden sm:block right-6">01</span>
+                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-12 hidden sm:block right-7">01</span>
             </div>
         </section>
 
@@ -473,10 +473,10 @@
         <section id="about" class="overflow-hidden snap-center w-full h-full flex items-center relative">
             <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute">
                 <!-- Text Slider -->
-                <div class="textslider space-y-7 transition-transform duration-700 translate-x-[-100%]"
+                <div class="textslider space-y-7 transition-transform duration-700 translate-x-[-100%] ease-out"
                     data-section="about">
                     <!-- My Works Heading -->
-                    <h1 class="text-[calc(1.2rem+6vw)] text-white tracking-widest ">
+                    <h1 class="text-[calc(1.5rem+6vw)] text-white tracking-widest">
                         About Me
                     </h1>
 
@@ -504,7 +504,7 @@
             <!-- about 2 Countainer -->
             <div id="about2cont"
                 class="h-screen z-[999] w-screen bg-neutral-100 -translate-x-full transition-transform duration-300 ease-out overflow-y-scroll fixed right-0 top-0">
-                <div class="px-[7vw] md:px-[5vw]">
+                <div class="px-[8vw] md:px-[5vw]">
                     <!-- Back Arrow -->
                     <div class="w-full sticky top-0 py-7 flex z-10">
                         <!-- work 2 back arrow -->
@@ -523,10 +523,12 @@
                     <div class="flex gap-7 items-baseline pt-10">
                         <span
                             class="counting text-[calc(1.7rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text">01</span>
-                        <h1 class="text-[calc(1.7rem+1vw)]  tracking-wider text-gray-900">WHO I AM</h1>
+                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">
+                            WHO I AM
+                        </h1>
                     </div>
 
-                    <div class="mx-auto grid items-center grid-cols-1 md:grid-cols-2 gap-14 py-16 text-gray-800">
+                    <div class="mx-auto grid items-center grid-cols-1 md:grid-cols-2 gap-14 py-14 text-gray-800">
                         <div class="space-y-8">
                             <!-- My name -->
                             <h2 class="text-[calc(1.5rem+1vw)] title-font font-semibold mb-1">
@@ -549,80 +551,83 @@
                         </div>
 
                         <!-- MY  PHOTO -->
-                        <div class="w-full aspect-[4/3] overflow-hidden  bg-slate-300 shadow-gray-500 shadow-2xl">
+                        <div class="w-full aspect-[4/3] overflow-hidden bg-slate-300 shadow-gray-500 shadow-2xl">
                             <img src="/assets/img/my_photo.jpg" alt="my-photo" />
                         </div>
                     </div>
 
                     <!-- passion For -->
-                    <div class="flex gap-7 items-baseline pt-40">
+                    <div class="flex gap-7 items-baseline pt-36">
                         <span
                             class="counting text-[calc(1.7rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text">02</span>
-                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">PASSION FOR</h1>
+                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">
+                            PASSION FOR
+                        </h1>
                     </div>
 
                     <!-- passion Counatainer -->
                     <div
-                        class="transition-transform duration-300 translate-y-6 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 py-16">
-
-                        <div class="group card  aspect-[6/7] overflow-hidden  rounded-sm bg-slate-300 shadow-gray-400 shadow-2xl bg-center bg-cover bg-no-repeat"
-                            style="background-image: url('/assets/img/desktor.png')">
-                            <div
-                                class="h-full overflow-hidden translate-y-[78%] transition-transform duration-500 hover:translate-y-0 group-hover:translate-y-0 text-slate-200 grid text-center w-full bg-gradient-to-b from-black/90 via-black/70 to-black/60 p-[7%]">
-                                <h2
-                                    class="tracking-widest bg-gradient-to-r from-rose-600 to-indigo-700 text-transparent bg-clip-text text-[calc(1.2rem+1vw)]">
-                                    DESIGN</h2>
-                                <p class="text-sm sm:text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Eaque, illo quia? Earum eius quos eligendi accusamus magnam,
-                                    laboriosam vel commodi odit itaque repudiandae amet error
-                                </p>
-                            </div>
+                        class="transition-transform duration-300 translate-y-6 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 py-14">
+                        <div
+                            class="card space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
+                            <img src="/assets/img/design.svg" class="w-[calc(5rem+4vw)]" />
+                            <h3
+                                class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
+                                Design
+                            </h3>
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Distinctio accusamus maxime maiores, aperiam veritatis tempore
+                                id molestias sed architecto saepe, excepturi dicta sequi
+                                minima ipsa? Delectus explicabo officiis mollitia quasi!
+                            </p>
                         </div>
-                        <div class="group card  aspect-[6/7] overflow-hidden  rounded-sm bg-slate-300 shadow-gray-400 shadow-2xl bg-center bg-cover bg-no-repeat"
-                            style="background-image: url('/assets/img/desktor.png')">
-                            <div
-                                class="h-full overflow-hidden translate-y-[78%] transition-transform duration-500 hover:translate-y-0 group-hover:translate-y-0 text-slate-200 grid text-center w-full bg-gradient-to-b from-black/90 via-black/70 to-black/60 p-[7%]">
-                                <h2
-                                    class="tracking-widest bg-gradient-to-r from-rose-600 to-indigo-700 text-transparent bg-clip-text text-[calc(1.2rem+1vw)]">
-                                    TECHNOLOGY</h2>
-                                <p class="text-sm sm:text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Eaque, illo quia? Earum eius quos eligendi accusamus magnam,
-                                    laboriosam vel commodi odit itaque repudiandae amet error
-                                </p>
-                            </div>
+                        <div
+                            class="card space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
+                            <img src="/assets/img/technology.svg" class="w-[calc(5rem+4vw)]" />
+                            <h3
+                                class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
+                                Technology
+                            </h3>
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Distinctio accusamus maxime maiores, aperiam veritatis tempore
+                                id molestias sed architecto saepe, excepturi dicta sequi
+                                minima ipsa? Delectus explicabo officiis mollitia quasi!
+                            </p>
                         </div>
-                        <div class="group card  aspect-[6/7] overflow-hidden  rounded-sm bg-slate-300 shadow-gray-400 shadow-2xl bg-center bg-cover bg-no-repeat"
-                            style="background-image: url('/assets/img/desktor.png')">
-                            <div
-                                class="h-full overflow-hidden translate-y-[78%] transition-transform duration-500 hover:translate-y-0 group-hover:translate-y-0 text-slate-200 grid text-center w-full bg-gradient-to-b from-black/90 via-black/70 to-black/60 p-[7%]">
-                                <h2
-                                    class="tracking-widest bg-gradient-to-r from-rose-600 to-indigo-700 text-transparent bg-clip-text text-[calc(1.2rem+1vw)]">
-                                    PHOTOGRAPHY</h2>
-                                <p class="text-sm sm:text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Eaque, illo quia? Earum eius quos eligendi accusamus magnam,
-                                    laboriosam vel commodi odit itaque repudiandae amet error
-                                </p>
-                            </div>
+                        <div
+                            class="card space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
+                            <img src="/assets/img/photography.svg" class="w-[calc(5rem+4vw)]" />
+                            <h3
+                                class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
+                                Photography
+                            </h3>
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Distinctio accusamus maxime maiores, aperiam veritatis tempore
+                                id molestias sed architecto saepe, excepturi dicta sequi
+                                minima ipsa? Delectus explicabo officiis mollitia quasi!
+                            </p>
                         </div>
                     </div>
 
                     <!-- Skills Set -->
-                    <div class="flex gap-7 items-baseline pt-40">
+                    <div class="flex gap-7 items-baseline pt-36">
                         <span
                             class="counting text-[calc(1.7rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text">03</span>
-                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">SKILL SET</h1>
+                        <h1 class="text-[calc(1.7rem+1vw)] tracking-wider text-gray-900">
+                            SKILL SET
+                        </h1>
                     </div>
 
                     <!-- Full Progressbar Countainer -->
                     <div
-                        class="flex flex-col justify-between sm:flex-row gap-16 py-16 text-slate-700 text-sm sm:text-lg md:text-xl">
+                        class="flex flex-col justify-between sm:flex-row gap-16 py-14 text-slate-700 text-sm sm:text-lg md:text-xl">
                         <!-- Coding Skills Countainer -->
                         <div class="space-y-9 sm:space-y-12 w-full font-semibold tracking-widest">
                             <div class="flex w-full">
-                                <img src="/assets/img/react.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/react.svg" class="w-7 md:w-10 mr-4" />
 
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
@@ -634,14 +639,14 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="55"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/tailwind.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/tailwind.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -652,14 +657,14 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="97"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/git.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/git.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -670,14 +675,14 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="95"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/javascript.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/javascript.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -688,14 +693,14 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="55"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/html-css.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/html-css.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -706,7 +711,7 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="98"></div>
                                     </div>
                                 </div>
@@ -716,7 +721,7 @@
                         <!-- Designing Skills Countainer -->
                         <div class="space-y-9 sm:space-y-12 w-full font-semibold tracking-widest">
                             <div class="flex w-full">
-                                <img src="/assets/img/photoshop.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/photoshop.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -727,13 +732,13 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="43"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex w-full">
-                                <img src="/assets/img/illustrator.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/illustrator.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -744,14 +749,14 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="77"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/figma.svg" class="h-7 md:h-10 mr-4">
+                                <img src="/assets/img/figma.svg" class="h-7 md:h-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -762,13 +767,13 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="79"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex w-full">
-                                <img src="/assets/img/lightroom.svg" class="w-7 md:w-10 mr-4">
+                                <img src="/assets/img/lightroom.svg" class="w-7 md:w-10 mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -779,7 +784,7 @@
                                     </div>
                                     <div
                                         class="h-[calc(.5rem+.5vw)] w-full bg-slate-100 shadow-md overflow-hidden rounded-full">
-                                        <div class="progressbar bg-gradient-to-r from-rose-600 to-indigo-700 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
+                                        <div class="progressbar bg-gradient-to-r from-rose-700 to-indigo-800 h-full rounded-full transition-[width] duration-[1500ms] ease-out"
                                             data-progress="99"></div>
                                     </div>
                                 </div>
@@ -835,22 +840,22 @@
                 </div>
             </div>
             <span
-                class="font-semibold counting hidden sm:block bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text  font-mono z-10 text-[calc(2rem+5vw)]  absolute bottom-16 right-[15%]">02</span>
+                class="font-semibold counting hidden sm:block bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-mono z-10 text-[calc(2rem+5vw)] absolute bottom-16 right-[15%]">02</span>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="overflow-hidden snap-center w-full h-full flex items-center relative z-10">
-            <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute z-10 bottom-[20vh] md:bottom-[25vh]">
+            <div class="ml-[9%] md:ml-[13%] w-4/5 my-auto overflow-hidden absolute z-10 bottom-[15%] md:bottom-[25%]">
                 <!-- Text Slider -->
-                <div class="textslider space-y-6 transition-transform duration-700 translate-x-[-100%]"
+                <div class="textslider space-y-6 transition-transform duration-700 translate-x-[-100%] ease-out"
                     data-section="contact">
                     <!-- Contact Heading -->
-                    <h1 class="text-[calc(1.2rem+6vw)] text-white tracking-widest">
-                        <span class="stroke_white">Get In</span> Touch
+                    <h1 class="text-[calc(1.5rem+6vw)] text-white tracking-widest">
+                        Get In Touch
                     </h1>
 
                     <!-- Fancy Lines -->
-                    <div class="space-y-4 w-32">
+                    <div class="space-y-4 w-32 hidden md:block">
                         <div class="w-20 rounded-md ml-auto h-1 bg-gradient-to-r from-rose-500 to-indigo-700"></div>
                         <div class="w-20 rounded-md h-1 bg-gradient-to-r from-rose-500 to-indigo-700"></div>
                     </div>
@@ -900,10 +905,10 @@
             </div>
 
             <div data-section="contact"
-                class="absolute imageslider right-[10vw] h-[40vh] bottom-[45vh] md:bottom-[15vh] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center  aspect-[4/5] bg-slate-500"
+                class="absolute imageslider right-[10vw] h-[50%] bottom-[35%] md:bottom-[15%] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center aspect-[4/5] bg-slate-500"
                 style="background-image: url('/assets/img/my_photo.jpg')">
                 <span
-                    class="counting z-10 text-[calc(2rem+5vw)] text-white  absolute -bottom-12 hidden sm:block right-6">03</span>
+                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-12 hidden sm:block right-7">03</span>
             </div>
         </section>
     </main>
