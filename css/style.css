@@ -52,11 +52,6 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-/* Preloader Hide */
-.preloader_hide {
-  height: 0;
-}
-
 /* 4 line |||| */
 .line_active {
   height: 100%;
@@ -155,3 +150,4 @@ h1 {
 .moon_slide {
   transform: translateX(200%);
 }
+
