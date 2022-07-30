@@ -32,15 +32,15 @@ a {
 
 @font-face {
   font-family: "Futura_Bd";
-  src: url(/assets/font/Futura-Bold.woff);
+  src: url(/assets/fonts/Futura-Bold.woff);
 }
 @font-face {
   font-family: "Futura_Md";
-  src: url(/assets/font/Futura-Med.woff);
+  src: url(/assets/fonts/Futura-Med.woff);
 }
 @font-face {
   font-family: "Futura_Bk";
-  src: url(/assets/font/Futura-Book.woff);
+  src: url(/assets/fonts/Futura-Book.woff);
 }
 
 @tailwind base;
