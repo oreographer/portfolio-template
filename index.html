@@ -5,7 +5,7 @@
     <title>Portfolio Template 01</title>
     <base href="/" />
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
-    <meta property="og:image" content="https://oreographer.github.io/assets/img/my_photo.jpg." />
+    <meta property="og:image" content="https://oreographer.github.io/assets/images/my_photo.jpg." />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -22,7 +22,6 @@
     <meta property="og:locale" content="en_IN" />
     <meta name="twitter:site" content="@oreographer" />
     <meta name="twitter:creator" content="@oreographer" />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
 
     <script>
         window.onload = () => {
@@ -30,6 +29,7 @@
             document.getElementById("loader").style.display = "none";
         };
     </script>
+    
     <!-- npx tailwindcss -o css/build.css --minify -->
     <link rel="stylesheet" href="/css/build.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -39,12 +39,12 @@
     <!-- Preloader -->
     <div id="preloader"
         class="h-full w-full bg-black flex items-center justify-center fixed top-0 left-0 z-[99999] transition-[height] duration-700 ease-out">
-        <div id="loader"
-            class="border-[7px] border-violet-800 rounded-full border-t-[7px] border-t-white w-12 h-12 animate-spin">
+        <div id="loader" class="text-white">
+            Loading...
         </div>
     </div>
 
-    <header class="w-full z-50 fixed top-0 left-0 py-7 px-[8vw] flex justify-between">
+    <header class="w-full z-50 fixed top-0 left-0 py-6 px-[6vw] flex justify-between">
         <!-- Main LOGO  -->
         <a href="/" class="z-30">
             <svg class="fill-white cursor-pointer w-8 sm:w-9" xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@
     <!-- Fullpage -->
     <main
         class="fullpage w-full h-full relative bg-black overflow-x-hidden overflow-y-scroll overflow-hidden snap-y snap-mandatory bg-no-repeat bg-center bg-cover"
-        style="background-image: url(/assets/img/star.svg)" id="fullpage">
+        style="background-image: url(/assets/images/star.svg)" id="fullpage">
         <!-- Navigation Lines  -->
         <ul class="fixed flex z-20 justify-between items-end h-[calc(1.8rem+1vw)] w-[calc(7.5rem+1vw)] bottom-[calc(.8rem+1vh)] left-1/2 -translate-x-2/4 md:rotate-90 md:left-[5%] md:top-1/2 md:-translate-y-2/4"
             id="navigation">
@@ -273,7 +273,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-14">
                         <!-- Work items start from here >>> -->
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/desktor.png')">
+                            style="background-image: url('/assets/images/desktor.png')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -292,7 +292,7 @@
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
                             style="
-                  background-image: url('/assets/img/oreographer_figma.jpg');
+                  background-image: url('/assets/images/oreographer_figma.jpg');
                 ">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
@@ -311,7 +311,7 @@
                             </div>
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/spotify_clone.jpg')">
+                            style="background-image: url('/assets/images/spotify_clone.jpg')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -329,7 +329,7 @@
                             </div>
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/desktor.png')">
+                            style="background-image: url('/assets/images/desktor.png')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -347,7 +347,7 @@
                             </div>
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/desktor.png')">
+                            style="background-image: url('/assets/images/desktor.png')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/desktor.png')">
+                            style="background-image: url('/assets/images/desktor.png')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -383,7 +383,7 @@
                             </div>
                         </div>
                         <div class="fade bg-slate-300 rounded-sm text-white text-xl overflow-hidden aspect-[2/1] bg-no-repeat bg-center bg-cover shadow-gray-200 shadow-2xl relative"
-                            style="background-image: url('/assets/img/desktor.png')">
+                            style="background-image: url('/assets/images/desktor.png')">
                             <div
                                 class="h-full group flex transition-colors hover:bg-black/20 justify-between w-full bg-gradient-to-b from-black/0 via-black/20 to-black/60 p-4">
                                 <!-- Item's Name -->
@@ -453,7 +453,7 @@
             <div data-section="works"
                 class="absolute imageslider right-[10vw] h-[50%] bottom-[35%] md:bottom-[15%] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center aspect-[4/5] bg-slate-900">
                 <span
-                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-12 hidden sm:block right-7">01</span>
+                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-14 hidden sm:block right-7">01</span>
             </div>
         </section>
 
@@ -541,7 +541,7 @@
 
                         <!-- MY  PHOTO -->
                         <div class="w-full aspect-[4/3] overflow-hidden bg-slate-300 shadow-gray-500 shadow-2xl">
-                            <img src="/assets/img/my_photo.jpg" alt="my-photo" />
+                            <img src="/assets/images/my_photo.jpg" alt="my-photo" />
                         </div>
                     </div>
 
@@ -559,7 +559,7 @@
                         class="transition-transform duration-300 translate-y-6 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 py-14">
                         <div
                             class="passion space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
-                            <img src="/assets/img/design.svg" class="w-[calc(5rem+4vw)]" />
+                            <img src="/assets/images/design.svg" class="w-[calc(5rem+4vw)]" />
                             <h3
                                 class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
                                 Design
@@ -573,7 +573,7 @@
                         </div>
                         <div
                             class="passion space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
-                            <img src="/assets/img/technology.svg" class="w-[calc(5rem+4vw)]" />
+                            <img src="/assets/images/technology.svg" class="w-[calc(5rem+4vw)]" />
                             <h3
                                 class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
                                 Technology
@@ -587,7 +587,7 @@
                         </div>
                         <div
                             class="passion space-y-4 overflow-hidden grid text-center p-5 justify-items-center text-slate-800">
-                            <img src="/assets/img/photography.svg" class="w-[calc(5rem+4vw)]" />
+                            <img src="/assets/images/photography.svg" class="w-[calc(5rem+4vw)]" />
                             <h3
                                 class="text-[calc(1.5rem+1vw)] bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-semibold">
                                 Photography
@@ -616,7 +616,7 @@
                         <!-- Coding Skills Countainer -->
                         <div class="space-y-9 sm:space-y-12 w-full font-semibold tracking-widest">
                             <div class="flex w-full">
-                                <img src="/assets/img/react.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/react.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
 
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
@@ -635,7 +635,7 @@
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/tailwind.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/tailwind.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -653,7 +653,7 @@
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/git.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/git.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -671,7 +671,7 @@
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/javascript.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/javascript.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -689,7 +689,7 @@
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/html-css.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/html-css.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -710,7 +710,7 @@
                         <!-- Designing Skills Countainer -->
                         <div class="space-y-9 sm:space-y-12 w-full font-semibold tracking-widest">
                             <div class="flex w-full">
-                                <img src="/assets/img/photoshop.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/photoshop.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -727,7 +727,7 @@
                                 </div>
                             </div>
                             <div class="flex w-full">
-                                <img src="/assets/img/illustrator.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/illustrator.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -745,7 +745,7 @@
                             </div>
 
                             <div class="flex w-full">
-                                <img src="/assets/img/figma.svg" class="h-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/figma.svg" class="h-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -762,7 +762,7 @@
                                 </div>
                             </div>
                             <div class="flex w-full">
-                                <img src="/assets/img/lightroom.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
+                                <img src="/assets/images/lightroom.svg" class="w-[calc(1rem+2vw)] mr-3 md:mr-4" />
                                 <div class="progress_wrapper w-full">
                                     <div class="flex justify-between mb-2">
                                         <div class="flex gap-6 items-center">
@@ -829,7 +829,7 @@
                 </div>
             </div>
             <span
-                class="font-semibold counting hidden sm:block bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text font-mono z-10 text-[calc(2rem+5vw)] absolute bottom-16 right-[15%]">02</span>
+                class="font-semibold counting hidden sm:block bg-gradient-to-r from-rose-500 to-indigo-700 text-transparent bg-clip-text  z-10 text-[calc(2rem+5vw)] absolute bottom-20 right-[15%]">02</span>
         </section>
 
         <!-- Contact Section -->
@@ -895,9 +895,9 @@
 
             <div data-section="contact"
                 class="absolute imageslider right-[10vw] h-[50%] bottom-[35%] md:bottom-[15%] md:h-[68vh] w-[80%] md:w-[50%] bg-no-repeat bg-cover bg-center aspect-[4/5] bg-slate-900"
-                style="background-image: url('/assets/img/touch.jpg')">
+                style="background-image: url('/assets/images/touch.jpg')">
                 <span
-                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-12 hidden sm:block right-7">03</span>
+                    class="counting z-10 text-[calc(2rem+5vw)] text-white absolute -bottom-14 hidden sm:block right-7">03</span>
             </div>
         </section>
     </main>
